@@ -1,0 +1,152 @@
+[
+    {
+        "id": 3,
+        "name": "Florizarre",
+        "puissance": 80,
+        "attacks": [
+            {
+                "name": "Lame Feuille",
+                "damage": 25,
+                "type": "plante"
+            }
+        ],
+        "type": "plante",
+        "weak": "feu"
+    },
+    {
+        "id": 6,
+        "name": "Dracaufeu",
+        "puissance": 80,
+        "attacks": [
+            {
+                "name": "Lance-flammes",
+                "damage": 25,
+                "type": "feu"
+            }
+        ],
+        "type": "feu",
+        "weak": "elec"
+    },
+    {
+        "id": 9,
+        "name": "Tortank",
+        "puissance": 80,
+        "attacks": [
+            {
+                "name": "Hydrocanon",
+                "damage": 25,
+                "type": "eau"
+            }
+        ],
+        "type": "eau",
+        "weak": "elec"
+    },
+    {
+        "id": 150,
+        "name": "Mewtwo",
+        "puissance": 72,
+        "attacks": [
+            {
+                "name": "Choc Mental",
+                "damage": 50,
+                "type": "psy"
+            }
+        ],
+        "type": "psy",
+        "weak": "psy"
+    },
+    {
+        "id": 25,
+        "name": "Pikachu",
+        "puissance": 76,
+        "attacks": [
+            {
+                "name": "Fatal Foudre",
+                "damage": 30,
+                "type": "elec"
+            }
+        ],
+        "type": "elec",
+        "weak": "combat"
+    },
+    {
+        "id": 31,
+        "name": "Nidoqueen",
+        "puissance": 82,
+        "attacks": [
+            {
+                "name": "Double Pied",
+                "damage": 25,
+                "type": "combat"
+            }
+        ],
+        "type": "combat",
+        "weak": "psy"
+    },
+    {
+        "id": 59,
+        "name": "Arcanin",
+        "puissance": 90,
+        "attacks": [
+            {
+                "name": "Machouille",
+                "damage": 25,
+                "type": "psy"
+            },
+            {
+                "name": "Rebondifeu",
+                "damage": 15,
+                "type": "feu"
+            }
+        ],
+        "type": "feu",
+        "weak": "eau"
+    },
+    {
+        "id": 68,
+        "name": "Mackogneur",
+        "puissance": 72,
+        "attacks": [
+            {
+                "name": "Frappe Atlas",
+                "damage": 40,
+                "type": "combat"
+            }
+        ],
+        "type": "combat",
+        "weak": "psy"
+    },
+    {
+        "id": 130,
+        "name": "Leviator",
+        "puissance": 86,
+        "attacks": [
+            {
+                "name": "Vibraqua",
+                "damage": 20,
+                "type": "eau"
+            },
+            {
+                "name": "Draco-rage",
+                "damage": 30,
+                "type": "elec"
+            }
+        ],
+        "type": "eau",
+        "weak": "plante"
+    },
+    {
+        "id": 94,
+        "name": "Ectoplasma",
+        "puissance": 82,
+        "attacks": [
+            {
+                "name": "Ball'Ombre",
+                "damage": 25,
+                "type": "psy"
+            }
+        ],
+        "type": "psy",
+        "weak": "psy"
+    }
+]

@@ -1,0 +1,580 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Pokemon";
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Ketchum";
+  src: url("../fonts/Ketchum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pokemon";
+  src: url("../fonts/Pokemon-Classic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+header {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+header img {
+  width: 300px;
+}
+header h1 {
+  font-family: "Ketchum";
+  color: #395AA8;
+  font-size: 3.5rem;
+  text-align: center;
+  translate: 4px -30px;
+}
+
+.bg-img {
+  min-height: 100vh;
+  max-width: 100vw;
+  background-image: url("../img/pokeball-pattern.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+h2 {
+  border: black double thick;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pkm-display {
+  margin: 0 auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pkm-display .pkm-img {
+  width: 300px;
+  box-shadow: #25262c -5px 5px 10px;
+}
+.pkm-display .pkm-img:hover {
+  transform: scale(1.08);
+}
+
+.duel-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .duel-display {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+}
+.duel-display .pkm-img {
+  width: 300px;
+  box-shadow: #25262c -5px 5px 10px;
+}
+
+figure {
+  position: relative;
+}
+figure figcaption {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: black double thick;
+  position: absolute;
+  bottom: -10px;
+  left: 20%;
+  width: 60%;
+}
+figure figcaption img {
+  width: 40px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player .attacks {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: black double thick;
+  margin: 2rem 0;
+}
+.player .btn {
+  margin: 1rem 0;
+  font-family: "Pokemon";
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  display: inline-block;
+  color: black;
+}
+.player .btn:hover {
+  transform: scale(1.1);
+}
+
+.life {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+.life .life-container {
+  border: solid 1px #25262c;
+  display: inline-block;
+  border-radius: 5px;
+  height: 12px;
+  width: 250px;
+  margin-right: 1rem;
+  position: relative;
+}
+.life .life-container .life-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  border-radius: 5px;
+}
+.life .life-container .width-0 {
+  width: 0%;
+  background-color: #CC0000;
+}
+.life .life-container .width-1 {
+  width: 1%;
+  background-color: #CC0000;
+}
+.life .life-container .width-2 {
+  width: 2%;
+  background-color: #CC0000;
+}
+.life .life-container .width-3 {
+  width: 3%;
+  background-color: #CC0000;
+}
+.life .life-container .width-4 {
+  width: 4%;
+  background-color: #CC0000;
+}
+.life .life-container .width-5 {
+  width: 5%;
+  background-color: #CC0000;
+}
+.life .life-container .width-6 {
+  width: 6%;
+  background-color: #CC0000;
+}
+.life .life-container .width-7 {
+  width: 7%;
+  background-color: #CC0000;
+}
+.life .life-container .width-8 {
+  width: 8%;
+  background-color: #CC0000;
+}
+.life .life-container .width-9 {
+  width: 9%;
+  background-color: #CC0000;
+}
+.life .life-container .width-10 {
+  width: 10%;
+  background-color: #CC0000;
+}
+.life .life-container .width-11 {
+  width: 11%;
+  background-color: #CC0000;
+}
+.life .life-container .width-12 {
+  width: 12%;
+  background-color: #CC0000;
+}
+.life .life-container .width-13 {
+  width: 13%;
+  background-color: #CC0000;
+}
+.life .life-container .width-14 {
+  width: 14%;
+  background-color: #CC0000;
+}
+.life .life-container .width-15 {
+  width: 15%;
+  background-color: #CC0000;
+}
+.life .life-container .width-16 {
+  width: 16%;
+  background-color: #CC0000;
+}
+.life .life-container .width-17 {
+  width: 17%;
+  background-color: #CC0000;
+}
+.life .life-container .width-18 {
+  width: 18%;
+  background-color: #CC0000;
+}
+.life .life-container .width-19 {
+  width: 19%;
+  background-color: #CC0000;
+}
+.life .life-container .width-20 {
+  width: 20%;
+  background-color: #CC0000;
+}
+.life .life-container .width-21 {
+  width: 21%;
+  background-color: #CC0000;
+}
+.life .life-container .width-22 {
+  width: 22%;
+  background-color: #CC0000;
+}
+.life .life-container .width-23 {
+  width: 23%;
+  background-color: #CC0000;
+}
+.life .life-container .width-24 {
+  width: 24%;
+  background-color: #CC0000;
+}
+.life .life-container .width-25 {
+  width: 25%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-26 {
+  width: 26%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-27 {
+  width: 27%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-28 {
+  width: 28%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-29 {
+  width: 29%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-30 {
+  width: 30%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-31 {
+  width: 31%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-32 {
+  width: 32%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-33 {
+  width: 33%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-34 {
+  width: 34%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-35 {
+  width: 35%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-36 {
+  width: 36%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-37 {
+  width: 37%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-38 {
+  width: 38%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-39 {
+  width: 39%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-40 {
+  width: 40%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-41 {
+  width: 41%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-42 {
+  width: 42%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-43 {
+  width: 43%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-44 {
+  width: 44%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-45 {
+  width: 45%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-46 {
+  width: 46%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-47 {
+  width: 47%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-48 {
+  width: 48%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-49 {
+  width: 49%;
+  background-color: #FFDE00;
+}
+.life .life-container .width-50 {
+  width: 50%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-51 {
+  width: 51%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-52 {
+  width: 52%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-53 {
+  width: 53%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-54 {
+  width: 54%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-55 {
+  width: 55%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-56 {
+  width: 56%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-57 {
+  width: 57%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-58 {
+  width: 58%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-59 {
+  width: 59%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-60 {
+  width: 60%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-61 {
+  width: 61%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-62 {
+  width: 62%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-63 {
+  width: 63%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-64 {
+  width: 64%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-65 {
+  width: 65%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-66 {
+  width: 66%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-67 {
+  width: 67%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-68 {
+  width: 68%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-69 {
+  width: 69%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-70 {
+  width: 70%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-71 {
+  width: 71%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-72 {
+  width: 72%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-73 {
+  width: 73%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-74 {
+  width: 74%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-75 {
+  width: 75%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-76 {
+  width: 76%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-77 {
+  width: 77%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-78 {
+  width: 78%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-79 {
+  width: 79%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-80 {
+  width: 80%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-81 {
+  width: 81%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-82 {
+  width: 82%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-83 {
+  width: 83%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-84 {
+  width: 84%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-85 {
+  width: 85%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-86 {
+  width: 86%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-87 {
+  width: 87%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-88 {
+  width: 88%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-89 {
+  width: 89%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-90 {
+  width: 90%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-91 {
+  width: 91%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-92 {
+  width: 92%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-93 {
+  width: 93%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-94 {
+  width: 94%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-95 {
+  width: 95%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-96 {
+  width: 96%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-97 {
+  width: 97%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-98 {
+  width: 98%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-99 {
+  width: 99%;
+  background-color: #6ecca3;
+}
+.life .life-container .width-100 {
+  width: 100%;
+  background-color: #6ecca3;
+}
+
+.duel-details {
+  background-color: rgba(255, 255, 255, 0.7);
+  flex-basis: 20%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

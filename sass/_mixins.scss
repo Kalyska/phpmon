@@ -1,0 +1,27 @@
+@mixin no-margin {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin button() {
+    margin: 1rem 0;
+    font-family: 'Pokemon';
+
+    border: none;
+    background-color: transparent;
+
+    text-decoration: none;
+    padding: 1.5rem 2.5rem;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@mixin media($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
